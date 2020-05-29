@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -210,4 +211,41 @@ main #blurb h3 {
 
 main #blurb p {
   text-align: center;
+}
+
+main #insuranceCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #insuranceCards div .insuranceType {
+  color: #00003f;
+}
+
+main #insuranceCards div .benefits {
+  list-style: none;
+}
+
+main #insuranceCards div .benefits li:before {
+  content: "✓";
+  color: teal;
+}
+
+main #insuranceCards div .summary {
+  font-weight: bold;
+}
+
+main #insuranceCards div .details {
+  color: grey;
+  word-wrap: normal;
 }

@@ -66,4 +66,41 @@ main {
 			text-align: center;
 		}
 	}
+
+	#insuranceCards {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		align-items: center;
+
+		div {
+			.insuranceType {
+				color: $accentFont;
+			}
+
+			.tagline {
+			}
+
+			.benefits {
+				list-style: none;
+
+				li {
+				}
+
+				li:before {
+					content: "✓";
+					color: teal;
+				}
+			}
+
+			.summary {
+				font-weight: bold;
+			}
+
+			.details {
+				color: grey;
+				word-wrap: normal;
+			}
+		}
+	}
 }
