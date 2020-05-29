@@ -174,10 +174,14 @@ main {
 }
 
 main h1 {
-  margin: 5%;
+  margin: 2% 0 0 5%;
+  text-align: start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 main #teamContainer {
+  margin: 5% 10% 5% 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,39 +189,62 @@ main #teamContainer {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main #teamContainer .card {
-  height: 200px;
-  width: 100px;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  height: 100%;
+  width: 100%;
+  margin: 2%;
   background-color: white;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px 0.5px 0.5px 0.5px;
-  border-color: black lightgrey lightgrey lightgrey;
+  border-color: lightgrey;
   -webkit-box-shadow: 3px 1px lightgrey;
           box-shadow: 3px 1px lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #teamContainer .card .cardImg {
+  height: 40vh;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: inherit;
 }
 
 main #teamContainer .card .cardName {
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: bold;
+  padding: 0;
+  margin: 2% 0 2% 0;
 }
 
 main #teamContainer .card .cardEmail {
-  font-size: 1vh;
+  font-size: 1.5vh;
+  color: grey;
+  margin: 0 0 2% 0;
+  padding: 0;
 }
 
 main #teamContainer .card .cardText {
+  display: none;
   font-size: 1vh;
 }
 
