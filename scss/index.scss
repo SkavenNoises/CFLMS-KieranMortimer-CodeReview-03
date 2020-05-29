@@ -105,43 +105,76 @@ main {
 
 	#insuranceCards {
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
+		flex-flow: column nowrap;
+		justify-content: center;
 		align-items: center;
 
-		div {
-			border-radius: 2px;
-			border-style: solid;
-			border-width: 2px 0.5px 0.5px 0.5px;
-			border-color: black lightgrey lightgrey lightgrey;
-			box-shadow: 3px 1px lightgrey;
+		#cardContainer {
+			margin: 5% 0;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-evenly;
 
-			.insuranceType {
-				color: $accentFont;
-			}
+			#basic,
+			#premium {
+				flex-basis: 40%;
+				border-radius: 2px;
+				border-style: solid;
+				border-width: 2px 0.5px 0.5px 0.5px;
+				border-color: black lightgrey lightgrey lightgrey;
+				box-shadow: 3px 1px lightgrey;
 
-			.tagline {
-			}
+				div {
+					margin: 8%;
+					display: flex;
+					flex-flow: column nowrap;
+					align-items: flex-start;
 
-			.benefits {
-				list-style: none;
+					.insuranceType {
+						color: $accentFont;
+						font-size: 2vw;
+						padding: 0;
+						margin: 0;
+					}
 
-				li {
+					.tagline {
+						margin: 0;
+						font-size: 1.5vw;
+					}
+
+					.benefits {
+						list-style: none;
+						padding: 0;
+						margin: 5% 0;
+						width: 100%;
+
+						li {
+							font-size: 1.5vw;
+							margin: 5% 0;
+						}
+
+						li:before {
+							content: "✓";
+							color: teal;
+							margin-right: 2%;
+						}
+					}
+
+					.summary {
+						font-weight: bold;
+						font-size: 1.5vw;
+						margin: 0;
+						padding: 0;
+					}
+
+					.details {
+						color: grey;
+						word-wrap: normal;
+						margin: 0;
+						padding: 0;
+						font-size: 1.5vw;
+					}
 				}
-
-				li:before {
-					content: "✓";
-					color: teal;
-				}
-			}
-
-			.summary {
-				font-weight: bold;
-			}
-
-			.details {
-				color: grey;
-				word-wrap: normal;
 			}
 		}
 	}
