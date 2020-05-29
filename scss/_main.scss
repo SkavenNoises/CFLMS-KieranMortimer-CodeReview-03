@@ -55,7 +55,7 @@ header {
 					text-decoration-style: none;
 					text-decoration: none;
 					color: white;
-					font-size: 100%;
+					font-size: 1.5vw;
 					font-weight: bold;
 					padding-right: 15px;
 				}
@@ -73,20 +73,25 @@ footer {
 	nav {
 		align-self: flex-start;
 		flex-basis: 100%;
+		width: 100%;
 
 		ul {
 			display: inline-block;
 			list-style-type: none;
+			padding: 0;
+			margin: 0.5% 5%;
 
 			li {
 				display: inline;
 				text-decoration-style: none;
-				color: white;
 
 				a {
 					text-decoration-style: none;
 					text-decoration: none;
 					color: white;
+					font-size: 1.5vw;
+					font-weight: bold;
+					padding-right: 15px;
 				}
 			}
 		}
@@ -94,10 +99,13 @@ footer {
 
 	img {
 		align-self: flex-end;
+		margin-right: 5%;
 	}
 
 	p {
 		align-self: center;
 		color: white;
+		font-size: 1.5vw;
+		margin-bottom: 2%;
 	}
 }
