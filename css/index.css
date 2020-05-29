@@ -147,14 +147,14 @@ main #landing h1 {
   -ms-grid-column-align: start;
       justify-self: start;
   color: white;
+  margin: 2% 5%;
 }
 
 main #landing #calculator {
   -ms-flex-item-align: center;
       align-self: center;
   width: 80%;
-  background-color: white;
-  opacity: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +169,13 @@ main #landing #calculator {
           align-items: center;
 }
 
+main #landing #calculator h2 {
+  font-weight: bold;
+  font-size: 3vw;
+  width: 40%;
+  text-align: center;
+}
+
 main #landing #calculator #form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,28 +184,48 @@ main #landing #calculator #form {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
 }
 
 main #landing #calculator #form div {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: start;
+  margin-bottom: 2%;
+  width: inherit;
 }
 
 main #landing #calculator #form input,
 main #landing #calculator #form select {
-  width: 50%;
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  font-size: 2vw;
+}
+
+main #landing #calculator #form p {
+  font-size: 1.5vw;
+  width: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 main #landing #calculator input[type="button"] {
   background-color: #339235;
   border-radius: 10px;
   color: white;
+  width: 30%;
+  margin-top: 2.5%;
+  font-size: 2.5vw;
+  padding: 1%;
 }
 
 main #landing #calculator h3 {
   color: #339235;
+  visibility: hidden;
 }
 
 main #blurb {

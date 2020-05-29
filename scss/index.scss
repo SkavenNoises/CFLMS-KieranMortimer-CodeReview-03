@@ -13,30 +13,51 @@ main {
 		h1 {
 			justify-self: start;
 			color: white;
+			margin: 2% 5%;
 		}
 
 		#calculator {
 			align-self: center;
 			width: 80%;
-			background-color: white;
-			opacity: 80%;
+			background-color: rgba(255, 255, 255, 0.8);
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: space-around;
 			align-items: center;
 
+			h2 {
+				font-weight: bold;
+				font-size: 3vw;
+				width: 40%;
+				text-align: center;
+			}
+
 			#form {
 				display: flex;
 				flex-flow: row wrap;
-				justify-content: space-around;
+				justify-content: space-evenly;
+				text-align: center;
 
 				div {
-					flex-basis: 45%;
+					flex-basis: 40%;
+					text-align: start;
+					margin-bottom: 2%;
+					width: inherit;
 				}
 
 				input,
 				select {
-					width: 50%;
+					width: 100%;
+					height: 70%;
+					background-color: white;
+					font-size: 2vw;
+				}
+
+				p {
+					font-size: 1.5vw;
+					width: inherit;
+					padding: 0;
+					margin: 0;
 				}
 			}
 
@@ -44,10 +65,15 @@ main {
 				background-color: $secondaryAccentColour;
 				border-radius: 10px;
 				color: white;
+				width: 30%;
+				margin-top: 2.5%;
+				font-size: 2.5vw;
+				padding: 1%;
 			}
 
 			h3 {
 				color: $secondaryAccentColour;
+				visibility: hidden;
 			}
 		}
 	}
