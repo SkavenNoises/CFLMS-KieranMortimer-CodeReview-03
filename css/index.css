@@ -228,6 +228,15 @@ main #insuranceCards {
           align-items: center;
 }
 
+main #insuranceCards div {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px 0.5px 0.5px 0.5px;
+  border-color: black lightgrey lightgrey lightgrey;
+  -webkit-box-shadow: 3px 1px lightgrey;
+          box-shadow: 3px 1px lightgrey;
+}
+
 main #insuranceCards div .insuranceType {
   color: #00003f;
 }
