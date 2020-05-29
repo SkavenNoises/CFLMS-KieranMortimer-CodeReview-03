@@ -254,3 +254,13 @@ main #teamContainer .card:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
+
+@media only screen and (max-width: 600px) {
+  main h1 {
+    font-size: 3vh;
+  }
+  main #teamContainer .card {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}

@@ -1,4 +1,4 @@
-function getInsurance() {
+function calculateInsurance() {
 	// Mandatory field check
 	if (
 		document.getElementById("name").value == "" ||
@@ -91,4 +91,4 @@ function getInsurance() {
 	}
 }
 
-document.getElementById("calculateInsurance").addEventListener("click", getInsurance, false);
+document.getElementById("calculateInsurance").addEventListener("click", calculateInsurance, false);
