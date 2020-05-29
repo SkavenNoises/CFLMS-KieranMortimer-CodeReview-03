@@ -17,16 +17,20 @@ header {
 
 	#logoContainer {
 		flex-basis: 100%;
+		width: 90%;
+		align-self: center;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		img[src="img/logo.png"] {
 			justify-self: flex-start;
+			margin-right: 2%;
 		}
 
 		img[src="img/banner.png"] {
 			justify-self: flex-end;
+			margin: 1% 0;
 		}
 	}
 
@@ -37,6 +41,8 @@ header {
 		ul {
 			display: inline-block;
 			list-style-type: none;
+			padding: 0;
+			margin: 0.5% 5%;
 
 			li {
 				display: inline;
@@ -46,6 +52,9 @@ header {
 					text-decoration-style: none;
 					text-decoration: none;
 					color: white;
+					font-size: 100%;
+					font-weight: bold;
+					padding-right: 15px;
 				}
 			}
 		}
