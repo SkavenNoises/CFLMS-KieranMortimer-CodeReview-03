@@ -138,6 +138,29 @@ footer p {
   margin-bottom: 2%;
 }
 
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+  body header img[src="img/logo.png"] {
+    height: 3vh;
+    margin: 2% 0;
+  }
+  body header img[src="img/banner.png"] {
+    display: none;
+  }
+  body header nav ul li a {
+    font-size: 2vh;
+  }
+  body footer nav ul li a {
+    font-size: 2vh;
+  }
+  body footer img {
+    width: 25%;
+  }
+  body footer p {
+    font-size: 1.5vh;
+  }
+}
+
 main #landing {
   background-image: url("../img/traffic-332857_1920.jpg");
   background-repeat: no-repeat;
