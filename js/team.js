@@ -14,16 +14,18 @@ class Member {
 	addCard() {
 		// Use this method to create a new card in the html
 		document.getElementById("teamContainer").innerHTML += `
-        <div class="card">
+        <div class="card" id="${this.name}Card">
             <img class="cardImg" src="${this.img}" alt="" />
 
             <h2 class="cardName">${this.name}</h2>
 
 			<h3 class="cardEmail">${this.email}</h3>
 
-            <p class="cardText">${this.bio}</p>
+            <p class="cardText" id="${this.name}Bio">${this.bio}</p>
         </div>
         `;
+
+		document.getElementById(`${this.name}Bio`).style.display = "none";
 	}
 }
 
@@ -76,4 +78,19 @@ for (let member of teamMembers) {
 	console.log(`${member.name}'s card added to page`);
 }
 
-// Event listener for each team member
+// Attaching event listeners for each team member
+for (let member of teamMembers) {
+	document.getElementById(`${member.name}Card`).addEventListener(
+		"click",
+		function () {
+			console.log(`${member.name} has been clicked`);
+
+			if (document.getElementById(`${member.name}Bio`).style.display === "none") {
+				document.getElementById(`${member.name}Bio`).style.display = "unset";
+			} else {
+				document.getElementById(`${member.name}Bio`).style.display = "none";
+			}
+		},
+		false
+	);
+}
