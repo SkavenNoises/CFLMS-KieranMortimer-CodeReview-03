@@ -159,3 +159,43 @@ footer p {
     font-size: 1.5vh;
   }
 }
+
+main h1 {
+  margin: 5%;
+}
+
+main #teamContainer .card {
+  height: 200px;
+  width: 100px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px 0.5px 0.5px 0.5px;
+  border-color: black lightgrey lightgrey lightgrey;
+  -webkit-box-shadow: 3px 1px lightgrey;
+          box-shadow: 3px 1px lightgrey;
+}
+
+main #teamContainer .card .cardImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: inherit;
+}
+
+main #teamContainer .card .cardName {
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+main #teamContainer .card .cardEmail {
+  font-size: 1vh;
+}
+
+main #teamContainer .card .cardText {
+  font-size: 1vh;
+}
+
+main #teamContainer .card:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
