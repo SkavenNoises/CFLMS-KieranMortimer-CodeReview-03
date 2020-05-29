@@ -17,6 +17,7 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+	z-index: 5;
 
 	#logoContainer {
 		flex-basis: 100%;
