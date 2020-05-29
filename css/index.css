@@ -242,12 +242,22 @@ main #blurb {
           justify-content: center;
 }
 
-main #blurb h3 {
-  text-align: center;
+main #blurb div {
+  margin: 3%;
 }
 
-main #blurb p {
+main #blurb div h3 {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+main #blurb div p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
 }
 
 main #insuranceCards {
