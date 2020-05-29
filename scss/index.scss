@@ -2,5 +2,68 @@
 
 main {
 	#landing {
+		background-image: url("../img/traffic-332857_1920.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		h1 {
+			justify-self: start;
+			color: white;
+		}
+
+		#calculator {
+			align-self: center;
+			width: 80%;
+			background-color: white;
+			opacity: 80%;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-around;
+			align-items: center;
+
+			#form {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+
+				div {
+					flex-basis: 45%;
+				}
+
+				input,
+				select {
+					width: 50%;
+				}
+			}
+
+			input[type="button"] {
+				background-color: $secondaryAccentColour;
+				border-radius: 10px;
+				color: white;
+			}
+
+			h3 {
+				color: $secondaryAccentColour;
+			}
+		}
+	}
+
+	#blurb {
+		background-color: $backgroundColour_grey;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		h3 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+		}
 	}
 }
