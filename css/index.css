@@ -410,3 +410,74 @@ main #insuranceCards #cardContainer #premium div .details {
   padding: 0;
   font-size: 1.5vw;
 }
+
+@media only screen and (max-width: 600px) {
+  main #landing h1 {
+    font-size: 3vh;
+  }
+  main #landing #calculator #form div {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-bottom: 5%;
+  }
+  main #landing #calculator #form div p {
+    font-size: 1.5vh;
+  }
+  main #landing #calculator #form div input {
+    height: 2vh;
+    font-size: 1.5vh;
+  }
+  main #landing #calculator #form div select {
+    font-size: 1.5vh;
+  }
+  main #landing #calculator #insuranceOutput {
+    font-size: 2vh;
+  }
+  main #blurb div h3 {
+    font-size: 2vh;
+  }
+  main #blurb div p {
+    font-size: 1.5vh;
+  }
+  main #insuranceCards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 80%;
+    margin: 0 auto;
+  }
+  main #insuranceCards #cardContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  main #insuranceCards #cardContainer #basic,
+  main #insuranceCards #cardContainer #premium {
+    margin: 5% 0;
+  }
+  main #insuranceCards #cardContainer #basic div .insuranceType,
+  main #insuranceCards #cardContainer #premium div .insuranceType {
+    font-size: 2vh;
+  }
+  main #insuranceCards #cardContainer #basic div .tagline,
+  main #insuranceCards #cardContainer #premium div .tagline {
+    font-size: 1.5vh;
+  }
+  main #insuranceCards #cardContainer #basic div .benefits li,
+  main #insuranceCards #cardContainer #premium div .benefits li {
+    font-size: 1.5vh;
+  }
+  main #insuranceCards #cardContainer #basic div .summary,
+  main #insuranceCards #cardContainer #premium div .summary {
+    font-size: 1.5vh;
+  }
+  main #insuranceCards #cardContainer #basic div .details,
+  main #insuranceCards #cardContainer #premium div .details {
+    font-size: 1.5vh;
+  }
+}

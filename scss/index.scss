@@ -190,4 +190,88 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+	main {
+		#landing {
+			h1 {
+				font-size: 3vh;
+			}
+
+			#calculator {
+				#form {
+					div {
+						flex-basis: 70%;
+						margin-bottom: 5%;
+						p {
+							font-size: 1.5vh;
+						}
+
+						input {
+							height: 2vh;
+							font-size: 1.5vh;
+						}
+
+						select {
+							font-size: 1.5vh;
+						}
+					}
+				}
+
+				#insuranceOutput {
+					font-size: 2vh;
+				}
+			}
+		}
+
+		#blurb {
+			div {
+				h3 {
+					font-size: 2vh;
+				}
+
+				p {
+					font-size: 1.5vh;
+				}
+			}
+		}
+
+		#insuranceCards {
+			flex-flow: column nowrap;
+			align-items: stretch;
+			width: 80%;
+			margin: 0 auto;
+
+			#cardContainer {
+				flex-flow: column nowrap;
+
+				#basic,
+				#premium {
+					margin: 5% 0;
+
+					div {
+						.insuranceType {
+							font-size: 2vh;
+						}
+
+						.tagline {
+							font-size: 1.5vh;
+						}
+
+						.benefits {
+							li {
+								font-size: 1.5vh;
+							}
+						}
+
+						.summary {
+							font-size: 1.5vh;
+						}
+
+						.details {
+							font-size: 1.5vh;
+						}
+					}
+				}
+			}
+		}
+	}
 }
