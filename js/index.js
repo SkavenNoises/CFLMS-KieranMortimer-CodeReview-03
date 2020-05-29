@@ -8,8 +8,11 @@ function calculateInsurance() {
 		window.alert("Please fill in all fields before submitting");
 	} else {
 		// Numerical Value check
-		if (isNaN(document.getElementById("horsepower").value)) {
-			window.alert("Please enter a numerical value into horsepower");
+		if (
+			isNaN(document.getElementById("horsepower").value) ||
+			isNaN(document.getElementById("age").value)
+		) {
+			window.alert("Please enter a numerical value into horsepower/age");
 		} else {
 			// Calculation
 			let insurance = null;
