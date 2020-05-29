@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+header #logoContainer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #logoContainer img[src="img/logo.png"] {
+  justify-self: flex-start;
+}
+
+header #logoContainer img[src="img/banner.png"] {
+  justify-self: flex-end;
+}
+
+header nav {
+  background-color: #8e1616;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+header nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+}
+
+header nav ul li a {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+footer nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: inline;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: white;
+}
+
+footer nav ul li a {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+footer img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+}

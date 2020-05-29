@@ -1,0 +1,87 @@
+$accentColour: #8e1616;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: space-between;
+
+	#logoContainer {
+		flex-basis: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		img[src="img/logo.png"] {
+			justify-self: flex-start;
+		}
+
+		img[src="img/banner.png"] {
+			justify-self: flex-end;
+		}
+	}
+
+	nav {
+		background-color: $accentColour;
+		flex-basis: 100%;
+
+		ul {
+			display: inline-block;
+			list-style-type: none;
+
+			li {
+				display: inline;
+				text-decoration-style: none;
+
+				a {
+					text-decoration-style: none;
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: black;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	nav {
+		align-self: flex-start;
+		flex-basis: 100%;
+
+		ul {
+			display: inline-block;
+			list-style-type: none;
+
+			li {
+				display: inline;
+				text-decoration-style: none;
+				color: white;
+
+				a {
+					text-decoration-style: none;
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+	}
+
+	img {
+		align-self: flex-end;
+	}
+
+	p {
+		align-self: center;
+		color: white;
+	}
+}
