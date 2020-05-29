@@ -39,7 +39,7 @@ let teamMembers = [
 		"Bill",
 		"bill@index.com",
 		"I'm Bill, I'm the one making those calls so you don't have to",
-		"img/person2"
+		"img/person2.jpg"
 	),
 
 	new Member(
